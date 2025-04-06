@@ -148,14 +148,4 @@ plt.savefig('covid_bed_utilization.png', bbox_inches='tight', dpi=300)
 plt.close()
 print("Saved: covid_bed_utilization.png")
 
-# 1. Pie Chart - Hospital Type Distribution
-plt.figure(figsize=(10, 8))
-hospital_type = df['Type of hospital_Private or Public'].value_counts()
-plt.pie(hospital_type, labels=hospital_type.index, autopct='%1.1f%%', startangle=90)
-plt.title('Hospital Type Distribution', fontsize=16)
-plt.tight_layout()
-plt.savefig('hospital_type_pie.png', bbox_inches='tight', dpi=300)
-plt.close()
-print("Saved: hospital_type_pie.png")
-
 print("\nEDA completed successfully! Visualizations saved as PNG files.")
