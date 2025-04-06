@@ -1,0 +1,370 @@
+City Name,Zone Number,Zone Name,Type of hospital_Private or Public,Total no. of beds,Number of COVID beds,Number of ICU beds,Number of ventilators or ABD
+Chennai,Zone  1,Thiruvottiyur ,Thiruvottiyur UCHC,65,0,0,0
+Chennai,Zone  1,Thiruvottiyur ,Thiruvottiyur GH,50,0,0,0
+Chennai,Zone  1,Thiruvottiyur ,Akash Hospital,120,50,50,4
+Chennai,Zone  1,Thiruvottiyur ,Sugam Hospital,102,51,2,2
+Chennai,Zone  1,Thiruvottiyur ,Suman Hospital,35,10,10,2
+Chennai,Zone  1,Thiruvottiyur ,SSS Hospital,18,6,4,0
+Chennai,Zone  1,Thiruvottiyur ,Susi Hospital,0,0,0,0
+Chennai,Zone  1,Thiruvottiyur ,Thaniq Natchatra Hospital,18,10,1,1
+Chennai,Zone  1,Thiruvottiyur ,Leela Speacility Hospital,20,20,0,0
+Chennai,Zone  1,Thiruvottiyur ,Vandhana Hospital,20,0,2,1
+Chennai,Zone 2,Manali,ANANTH HOSPITAL,16,11,4,2
+Chennai,Zone 2,Manali,Jeevan Jyothi Hospital,20,0,0,0
+Chennai,Zone 3,Madhavaram,KM HOSPITAL,10,0,0,0
+Chennai,Zone 3,Madhavaram,NM HOSSPITAL,10,0,0,0
+Chennai,Zone 3,Madhavaram,GS HOSPITAL ANTHONY HOSPITAL,3,0,0,0
+Chennai,Zone 3,Madhavaram,MURARI HOSPITAL,12,0,0,0
+Chennai,Zone 3,Madhavaram,ANTHONY HOSPITAL,50,0,0,0
+Chennai,Zone 3,Madhavaram,MMC HOSPITAL,64,0,4,0
+Chennai,Zone 3,Madhavaram,ST. ANTHONY HOSPITAL,8,0,0,0
+Chennai,Zone 4,Tondiarpet,NOOR'S HOSPITAL,6,0,0,0
+Chennai,Zone 4,Tondiarpet,KVT HEALTH CENTER,20,6,5,2
+Chennai,Zone 4,Tondiarpet,NRV HOSPITAL,15,0,0,0
+Chennai,Zone 4,Tondiarpet,MURTHUZAVIYA CHARITABLE HOSPITAL,15,0,0,0
+Chennai,Zone 4,Tondiarpet,R.S HOSPITAL,15,0,0,0
+Chennai,Zone 4,Tondiarpet,KVT SPECILITY HOSPITAL,75,21,18,5
+Chennai,Zone 4,Tondiarpet,PAVITHRA HOSPITAL,60,23,3,2
+Chennai,Zone 4,Tondiarpet,SENTHIL PRIYA HOSPITAL,31,10,6,0
+Chennai,Zone 4,Tondiarpet,K M HOSPITAL,20,0,3,0
+Chennai,Zone 4,Tondiarpet,RENUKKA NURSING HOME,18,0,0,0
+Chennai,Zone 4,Tondiarpet,"NALAMM HOSPITAL PVT LTD,",22,10,2,0
+Chennai,Zone 4,Tondiarpet,RAMIAH 24HRS CLINIC,3,0,0,0
+Chennai,Zone 4,Tondiarpet,APOLLO HOSPITALS,52,7,7,3
+Chennai,Zone 4,Tondiarpet,"M.K NURSING HOME,",40,24,3,0
+Chennai,Zone 4,Tondiarpet,"RASI HOSPITAL,",25,20,2,0
+Chennai,Zone 4,Tondiarpet,RANGA NURSING HOME,10,5,1,0
+Chennai,Zone 4,Tondiarpet,"JYOTI HOSPITAL,",25,18,1,0
+Chennai,Zone 4,Tondiarpet,SANJANA HOSPITAL,16,5,1,0
+Chennai,Zone 4,Tondiarpet,Peripheral Hospital (Stanley Hospital),25,0,1,0
+Chennai,Zone 4,Tondiarpet,SRI HOSPITAL,38,5,1,2
+Chennai,Zone 4,Tondiarpet,EZHIL HOSPITAL,45,10,0,0
+Chennai,Zone 4,Tondiarpet,MALLIGA HOSPITAL,42,0,0,0
+Chennai,Zone 4,Tondiarpet,ARUN HOSPITAL,4,0,0,0
+Chennai,Zone 4,Tondiarpet,IYAPPA HOSPITAL,20,15,3,5
+Chennai,Zone 4,Tondiarpet,AISHWARYA HOSPITAL,20,0,1,0
+Chennai,Zone 4,Tondiarpet,AV HOSPITAL,15,0,3,1
+Chennai,Zone 4,Tondiarpet,ANGEL HOSPITAL,12,0,0,0
+Chennai,Zone 5 ,Royapuram,ESHA HOSPITAL,20,10,0,0
+Chennai,Zone 5 ,Royapuram,CSI RAINY MULTI SPECIALITY HOSPITAL,150,60,7,1
+Chennai,Zone 5,Royapuram,NAGAMANI NURSING HOME,50,0,0,0
+Chennai,Zone 5,Royapuram,GANGA HOSPITAL,20,0,0,0
+Chennai,Zone 5,Royapuram,SAGUNTHALA NURSING HOME,50,0,0,0
+Chennai,Zone 5,Royapuram,PRIYA NURSING HOME,20,0,0,0
+Chennai,Zone 5,Royapuram,SANJEEVINI NURSING HOME,20,0,0,0
+Chennai,Zone 5,Royapuram,VASANTH NURSING HOME,10,0,0,0
+Chennai,Zone 5,Royapuram,JAYAM NURSING HOME,20,0,0,0
+Chennai,Zone 5,Royapuram,RATHINAM,25,0,0,0
+Chennai,Zone 5,Royapuram,RATHINA,10,0,0,0
+Chennai,Zone 5,Royapuram,CHENNNAI NATIONAL HOSPITALS,120,40,4,2
+Chennai,Zone 5,Royapuram,MERCURY  HOSPITAL,30,0,7,3
+Chennai,Zone 5,Royapuram,DEVARAJ MANIC CHAND HOSPITAL,50,0,5,2
+Chennai,Zone 5,Royapuram,1.Amrith hospital (private),40,0,4,0
+Chennai,Zone 5,Royapuram,2.AVM hospital (private),20,0,0,0
+Chennai,Zone 5,Royapuram,SRI KUMARN HOSPITAL,42,0,6,1
+Chennai,Zone 5,Royapuram,NITCHANI HOSPITAL,30,0,8,1
+Chennai,Zone 5,Royapuram,SUTHA HOSPITAL,24,8,2,1
+Chennai,Zone 5,Royapuram,ARC HOSPITAL,0,0,0,0
+Chennai,Zone 5,Royapuram,LIFE CARE HOSPITAL,0,0,0,0
+Chennai,Zone 5,Royapuram,GKM HOSPITAL,5,0,1,1
+Chennai,Zone 5,Royapuram,SHALOM HOSPITAL,5,0,0,0
+Chennai,Zone 5,Royapuram,MOHANARAO HOSPITAL,6,0,3,2
+Chennai,Zone 5,Royapuram,SUDHA HOSPITAL,5,0,2,2
+Chennai,Zone 5,Royapuram,SUNDRAVADHANAM HOSPITAL,5,0,1,1
+Chennai,Zone 6,TVK Nagar,KTS,15,0,0,5
+Chennai,Zone 6,TVK Nagar,BB CLINIC,10,0,0,0
+Chennai,Zone 6,TVK Nagar,BALA NSG HOME,0,0,0,0
+Chennai,Zone 6,TVK Nagar,ABHIJAY HOSPITAL,30,16,2,5
+Chennai,Zone 6,TVK Nagar,SHEPHERD NSG HOME,35,17,4,1
+Chennai,Zone 6,TVK Nagar,ESWARI NSG HOME,15,0,4,4
+Chennai,Zone 6,TVK Nagar,ST. JOSEPH CLUNY HOSPITAL,10,0,4,4
+Chennai,Zone 6,TVK Nagar,SEN HOSPITAL,15,8,4,3
+Chennai,Zone 6,TVK Nagar,APPLE HOSPITAL,15,0,0,0
+Chennai,Zone 6,TVK Nagar,SRINIVASAPRIYA,50,20,5,1
+Chennai,Zone 6,TVK Nagar,PRIYA NSG HOME,7,0,0,0
+Chennai,Zone 6,TVK Nagar,MEXICO NSG HOME,5,0,0,0
+Chennai,Zone 6,TVK Nagar,BEGUM SAFIA TRUST HOSPITAL,0,0,0,0
+Chennai,Zone 6,TVK Nagar,SRI VIGNESH HOSPIAL,0,0,0,0
+Chennai,Zone 6,TVK Nagar,SRI BALAJI HOSPITAL,0,0,0,0
+Chennai,Zone 6,TVK Nagar,RANJITH HOSPITAL,20,10,6,2
+Chennai,Zone 6,TVK Nagar,KM HOSPITAL,30,10,6,4
+Chennai,Zone 6,TVK Nagar,NR HOSPITAL,5,0,0,0
+Chennai,Zone 6,TVK Nagar,SRI HARI HIOSPITAL,0,0,0,0
+Chennai,Zone 6,TVK Nagar,MUTHU HOSPITAL,15,0,4,2
+Chennai,Zone 6,TVK Nagar,NARAYANA HOSPITAL,18,18,4,2
+Chennai,Zone 7,Ambattur,ESSVEE  HOSPITAL PVT,40,10,8,2
+Chennai,Zone 7,Ambattur,MAHALAKSHMI HOSPITAL,30,10,8,3
+Chennai,Zone 7,Ambattur,NARAYANA HOSPITAL,10,0,4,2
+Chennai,Zone 7,Ambattur,NIL,0,0,0,0
+Chennai,Zone 7,Ambattur,NIL,0,0,0,0
+Chennai,Zone 7,Ambattur,RABINDRANS HOSPITAL,25,5,5,2
+Chennai,Zone 7,Ambattur,TEJA HOSPITAL,12,3,2,1
+Chennai,Zone 7,Ambattur,RAKKI HOSPITAL,5,0,0,0
+Chennai,Zone 7,Ambattur,RAGAVENDRA HOSPITAL,10,3,0,0
+Chennai,Zone 7,Ambattur,OM SAKTHI HOSPITAL,15,3,0,0
+Chennai,Zone 7,Ambattur,MOTHERS HOSPITAL,20,5,0,0
+Chennai,Zone 7,Ambattur,VAISHNAVI NURSING HOME,10,3,2,1
+Chennai,Zone 7,Ambattur,KGJ HOSPITAL,20,10,2,2
+Chennai,Zone 7,Ambattur,APPLE HOSPITAL,15,7,3,0
+Chennai,Zone 7,Ambattur,DRJ HOSPITAL,70,35,3,1
+Chennai,Zone 7,Ambattur,RPS HOSPITAL,50,20,2,2
+Chennai,Zone 7,Ambattur,MATHIMED HOSPITAL,22,12,4,2
+Chennai,Zone 7,Ambattur,NEW CENTURY HOSPITAL,4,0,1,1
+Chennai,Zone 7,Ambattur,ROTARY CLUB HOSPITAL,5,0,1,1
+Chennai,Zone 7,Ambattur,NIL,0,0,0,0
+Chennai,Zone 7,Ambattur,SKS HOSPITAL,30,15,5,1
+Chennai,Zone 7,Ambattur,AASHARA HOSPITAL,15,12,2,0
+Chennai,Zone 7,Ambattur,RAJAM HOSPITAL,15,0,0,0
+Chennai,Zone 7,Ambattur,FRONTIER LIFELINE HOSPITAL,100,0,18,1
+Chennai,Zone 7,Ambattur,GPR,20,0,0,0
+Chennai,Zone 7,Ambattur,SPANDHANA,5,0,0,0
+Chennai,Zone 7,Ambattur,NIVARAN,5,0,0,0
+Chennai,Zone 7,Ambattur,RAGAVI,5,0,0,0
+Chennai,Zone 7,Ambattur,Divya hospital,5,0,0,0
+Chennai,Zone 7,Ambattur,Raj Nursing Home,28,16,5,1
+Chennai,Zone 7,Ambattur,MMM,295,25,5,1
+Chennai,Zone 8 ,Anna Nagar,"MOHAN NURSING HOME
+165, M.T.H. ROAD,,CHENNAI, -600049",20,8,4,0
+Chennai,Zone 8 ,Anna Nagar,"LIFE CARE DKJ HOSPITAL
+M.T.H ROAD VILLIVAKKAM CH - 49",25,17,4,0
+Chennai,Zone 8,Anna Nagar,"FAITH HOSPITAL
+SANNADHI STREET, VILLIVAKKAM CH - 49",30,12,0,0
+Chennai,Zone 8,Anna Nagar,"NEW RUTHRAN HOSPITAL 
+K.H. ROAD
+AYANAVARAM, CHENNAI - 23",0,0,0,0
+Chennai,Zone 8,Anna Nagar,"SUNDARAM MEDICAL FOUNDATION
+9-C,SHANTHI COLONY,,ANNA NAGAR,,CHENNAI-600040",60,33,7,0
+Chennai,Zone 8,Anna Nagar,"PRIME INDIAN HOSPITAL
+No.533, P.H.ROAD,,ARUMBAKKAM,,CHENNAI-600106",35,19,6,1
+Chennai,Zone 8,Anna Nagar,"CITY TOWER HOSPITAL
+AA-10, II AVENUE,,ANNA NAGAR,,CHENNAI-600040",45,28,5,0
+Chennai,Zone 8,Anna Nagar,"KHM HOSPITAL
+AB-14, 6TH MAIN STREET,,ANNA NAGAR,,CHENNAI-600040",0,0,0,0
+Chennai,Zone 8,Anna Nagar,"THE SPEED MEDICAL CENTRE HOSPITALS
+NO. 527, POONAMALLE HIGH ROAD,ARUMBAKKAM,CHENNAI-600106",23,11,4,0
+Chennai,Zone 8,Anna Nagar,"VIHAA HOSPITAL 
+3RD, AVENUE 
+ANNA NAGAR EAST, CHENNAI - 102",40,26,4,1
+Chennai,Zone 8,Anna Nagar,"BILLROTH HOSPITAL
+43, LAKSHMI TALKIES ROAD,,SHENOY NAGAR,,CHENNAI-600030",170,150,20,3
+Chennai,Zone 8,Anna Nagar,"A.K.N.NURSING HOME
+20, KELLYS ROAD,,CHENNAI, -600010",30,15,0,0
+Chennai,Zone 8,Anna Nagar,"GUEST HOSPITAL
+P.H.ROAD,,CHENNAI, -600010",50,40,5,0
+Chennai,Zone 8,Anna Nagar,"NEW HOPE MEDICAL CENTRE
+NO. 814, P.H. ROAD,KILPAUK,CHENNAI-600010",50,15,15,0
+Chennai,Zone 8,Anna Nagar,"PADMA CLINIC AND NURSING HOME
+753,P.H.ROAD,,KILPAUK,CHENNAI-600010",40,20,15,0
+Chennai,Zone 8,Anna Nagar,"RIGHT HOSPITAL
+NO.1, PROF. SUBRAMANIAM STREET,KILPAUK,CHENNAI-600010",25,20,0,0
+Chennai,Zone 8,Anna Nagar,"BE WELL SPECIALITY HOSPITAL
+BANK STREET,
+KILPAUK CHENNAI - 10",35,25,5,0
+Chennai,Zone 8,Anna Nagar,"MURUGAN HOSPITAL 
+P.H. Road
+KILPAUK CHENNAI - 10",40,15,10,1
+Chennai,Zone 8,Anna Nagar,"RAMA RAO HOSPITAL, P.H ROAD, KILPAUK CHENNAI",25,25,0,0
+Chennai,Zone 8,Anna Nagar,"LIFELINE HOSPITAL, NEW AVADI ROAD, KILPAUK CHENNAI",55,40,10,1
+Chennai,Zone 8,Anna Nagar,"TOSH HOSPITAL
+47/3, NEW AVADI ROAD,,CHENNAI, -600010",43,43,0,0
+Chennai,Zone 8,Anna Nagar,"NOBLE HOSPITAL
+4, AUDIAPPA STREET,,PURASAWALKAM,,CHENNAI-600084",120,70,20,2
+Chennai,Zone 8,Anna Nagar,"AMRIT HOSPITAL
+ALAGAPPA ROAD,CHENNAI, -600084",45,32,5,0
+Chennai,Zone 8,Anna Nagar,"SRI SINGHVI HEALTH CENTER
+127, BRICKKLIN ROAD, LUMBINI SQUARE, PURASAIWAKKAM, CHENNAI 600007",32,20,4,0
+Chennai,Zone 8,Anna Nagar,"APPASAMY MULTI SPECIALITY HOSPITAL
+NO.23, FRIENDS AVENUE,ARUMBAKKAM,
+CHENNAI-600106",120,83,7,1
+Chennai,Zone 8,Anna Nagar,"M.R.HOSPITAL
+12, GOVINDAN STREET,AYYAVOO COLONY,AMINJIKARAI,
+CHENNAI-600029",35,22,5,1
+Chennai,Zone 8,Anna Nagar,"MGM HEALTH CARE
+NELSON MANICKAM ROAD
+AMINJIKARAI, CH - 29",160,110,20,3
+Chennai,Zone 8,Anna Nagar,"MEHTAS HOSPITAL PRIVATE LTD
+21, MC.NICHOLS ROAD,,CHENNAI, -600031",150,102,18,1
+Chennai,Zone 8,Anna Nagar,"PADMINI NURSING HOME
+9, PACHIAYAPPAS COLLEGE HOSTEL ROAD,,CHETPET,
+CHENNAI-600031",60,40,10,0
+Chennai,Zone 9,Teynampet,siva sakthi nursing home,2,0,0,0
+Chennai,Zone 9,Teynampet,UPHC,1,0,0,0
+Chennai,Zone 9,Teynampet,APPOLLO MAIN HOSPITAL,504,117,36,36
+Chennai,Zone 9,Teynampet,APPOLLO CHILDREN,55,5,9,15
+Chennai,Zone 9,Teynampet,GG HOSPITAL,57,20,0,10
+Chennai,Zone 9,Teynampet,BRS HOSPITAL,40,0,6,2
+Chennai,Zone 9,Teynampet,LIFEMED,50,30,5,1
+Chennai,Zone 9,Teynampet,CHILD TRUST,200,10,1,1
+Chennai,Zone 9,Teynampet,BEST HOSPITAL,50,20,12,2
+Chennai,Zone 9,Teynampet,AMMA HOSPITAL,25,4,5,0
+Chennai,Zone 9,Teynampet,SHIFA HOSPITAL,40,0,0,0
+Chennai,Zone 9,Teynampet,HIBA HOSPITAL,15,0,0,0
+Chennai,Zone 9,Teynampet,CRESENT,23,0,0,0
+Chennai,Zone 9,Teynampet,sakthi hospital ,80,25,8,2
+Chennai,Zone 9,Teynampet,BHARATHIRAJA  HOSPITALS,60,50,10,5
+Chennai,Zone 9,Teynampet,CLOUD NINE HOSPITALS(ONLY MATERNITY),32,0,1,0
+Chennai,Zone 9,Teynampet,BE WELL HOSPITALS,30,0,5,1
+Chennai,Zone 9,Teynampet,Aswini ,32,0,3,2
+Chennai,Zone 9,Teynampet,Agarwal ,4,0,0,0
+Chennai,Zone 9,Teynampet,FOUSIYA HOSPITAL,15,0,0,0
+Chennai,Zone 9,Teynampet,CSI KAYANI HOSPITAL CH 04 /PVT,220,110,10,3
+Chennai,Zone 9,Teynampet,SEETHAPATHEYCLINIC HOSPITAL P LTD MYLOPOER CH 04,30,0,0,0
+Chennai,Zone 9,Teynampet, SRI VIVEKANTHAHOSPITAL NO 15 PSS CH 04,50,30,15,5
+Chennai,Zone 9,Teynampet,VENKATESHWARA HOSPITAL,135,70,10,6
+Chennai,Zone 9,Teynampet,GIRISHWARI HOSPITAL,50,10,4,2
+Chennai,Zone 9,Teynampet,MOTHER HOOD HOSPITAL,36,0,1,1
+Chennai,Zone 9,Teynampet,GENESIS HOSPITAL,10,0,0,0
+Chennai,Zone 9,Teynampet,APOLLO HOSPITAL,254,30,23,23
+Chennai,Zone 9,Teynampet,SEETHAPATHY HOSPITAL,25,0,0,0
+Chennai,Zone 9,Teynampet,ISABEL HOSPITAL,200,81,8,4
+Chennai,Zone 9,Teynampet,ORTHOMED HOSPITAL,0,0,0,0
+Chennai,Zone 9,Teynampet,CHENNAI MEENATCHI HOSPITAL,75,20,3,5
+Chennai,Zone 9,Teynampet,KAUVERY HOSPITAL,200,81,8,4
+Chennai,Zone 9,Teynampet,TRINITY HOSPITAL,200,0,0,0
+Chennai,Zone 9,Teynampet,sampath nursing home,10,0,3,1
+Chennai,Zone 9,Teynampet,SRI RANGA NURSING HOME,50,0,5,2
+Chennai,Zone 9,Teynampet,YOGI VEDHA KUMARI NURSING HOME,20,0,1,1
+Chennai,Zone 9,Teynampet,BILLROTH HOSPITAL,60,0,13,5
+Chennai,Zone 10,Kodambakkam,Sri balaji hospital,0,0,0,0
+Chennai,Zone 10,Kodambakkam,Subam Nursing Home,10,0,0,0
+Chennai,Zone 10,Kodambakkam,J.J.Nursing Home,7,0,0,0
+Chennai,Zone 10,Kodambakkam,Ponni N.Home,0,0,0,0
+Chennai,Zone 10,Kodambakkam,Surya Hospital,100,50,5,12
+Chennai,Zone 10,Kodambakkam,F.P.A.I AVM,0,0,0,0
+Chennai,Zone 10,Kodambakkam,Sakthi N.Home,3,0,0,0
+Chennai,Zone 10,Kodambakkam,Vijaya Hospital,752,104,22,11
+Chennai,Zone 10,Kodambakkam,Akash Fertility,35,4,8,2
+Chennai,Zone 10,Kodambakkam,Vadapalani Multi Speciality Hosp,82,11,1,1
+Chennai,Zone 10,Kodambakkam,P&G Nursing Home,15,0,0,0
+Chennai,Zone 10,Kodambakkam,SRM Kodambakkam (SIMS),250,110,14,6
+Chennai,Zone 10,Kodambakkam,Alaya (Arokiya),5,0,0,0
+Chennai,Zone 10,Kodambakkam,SMV Nursing Home,6,0,0,0
+Chennai,Zone 10,Kodambakkam,Parvathy Nursing Home,0,0,0,0
+Chennai,Zone 10,Kodambakkam,VHM Hospital,33,0,0,0
+Chennai,Zone 10,Kodambakkam,Multi Specialty Hosp,0,0,0,0
+Chennai,Zone 10,Kodambakkam,K.M. Nursing Home,25,0,0,0
+Chennai,Zone 10,Kodambakkam,K.M.Speciality,45,0,0,0
+Chennai,Zone 10,Kodambakkam,SM HOSPITAL,10,0,0,0
+Chennai,Zone 10,Kodambakkam,Pallava Hospital,12,0,2,0
+Chennai,Zone 10,Kodambakkam,Balaji Hospital,0,0,0,0
+Chennai,Zone 10,Kodambakkam,Sri Sai KRS,0,0,0,0
+Chennai,Zone 10,Kodambakkam,Maya Nursing Home,0,0,0,0
+Chennai,Zone 10,Kodambakkam,SUN RAYS,12,0,0,0
+Chennai,Zone 10,Kodambakkam,Kumaran Specialities,0,0,0,0
+Chennai,Zone 10,Kodambakkam,J.V.Hospital,60,12,8,1
+Chennai,Zone 10,Kodambakkam,Thulasi Krishna,0,0,0,0
+Chennai,Zone 10,Kodambakkam,Srinivasa,54,30,10,3
+Chennai,Zone 10,Kodambakkam,Madras Poly.Clinic & RR Scans,0,0,0,0
+Chennai,Zone 10,Kodambakkam,Gunasekar Nursing Home,50,21,4,2
+Chennai,Zone 10,Kodambakkam,Anuradha Maty.Home,15,0,0,0
+Chennai,Zone 10,Kodambakkam,Public Health Centre,100,0,12,5
+Chennai,Zone 10,Kodambakkam,S.R.M.Hospital,15,0,0,0
+Chennai,Zone 10,Kodambakkam,Meenakshi Nursing Home,20,0,0,0
+Chennai,Zone 10,Kodambakkam,Janani Hospital,15,0,0,0
+Chennai,Zone 10,Kodambakkam,Arokiya Hospital,19,19,0,0
+Chennai,Zone 10,Kodambakkam,Chakkara Maternity Home,7,0,0,0
+Chennai,Zone 10,Kodambakkam,Lakshmi Hospital,20,0,2,0
+Chennai,Zone 10,Kodambakkam,Raju Nursing Home,40,5,7,2
+Chennai,Zone 10,Kodambakkam,Kavitha Nursing Home,0,0,0,0
+Chennai,Zone 10,Kodambakkam,Sri Balaji ENT & MATRNITY,18,0,1,0
+Chennai,Zone 10,Kodambakkam,"Chithra Matt-Home
+ & Surgical Home",20,0,0,0
+Chennai,Zone 11,Valasaravakkam,MEENAKSHI GENERAL HOSPITAL,100,0,8,1
+Chennai,Zone 11,Valasaravakkam,RAVINA HOSPITAL,100,54,10,2
+Chennai,Zone 11,Valasaravakkam,NEURO LIFE  HOSPITAK,20,0,4,1
+Chennai,Zone 11,Valasaravakkam,MMRV HOSPITAL,50,10,20,10
+Chennai,Zone 11,Valasaravakkam,SRI BALAJI HOSPITAL,35,10,4,1
+Chennai,Zone 11,Valasaravakkam,MEDWAY HOSPITAL,30,0,5,1
+Chennai,Zone 11,Valasaravakkam,MULLAI HOSPITAL,4,0,0,0
+Chennai,Zone 11,Valasaravakkam,A4 hospital ,8,0,7,0
+Chennai,Zone 11,Valasaravakkam,Hannu Nursing home,10,0,0,1
+Chennai,Zone 11,Valasaravakkam,Royal hospital,0,0,0,0
+Chennai,Zone 11,Valasaravakkam,rakshith hospital,14,2,0,10
+Chennai,Zone 11,Valasaravakkam,ANN HOSPITAL,45,25,0,3
+Chennai,Zone 11,Valasaravakkam,LALITHA NURSING HOME,5,0,0,0
+Chennai,Zone 11,Valasaravakkam,JOSEPH HOSPITAL,35,19,5,0
+Chennai,Zone 11,Valasaravakkam,SRI RAMACHANDRA MEDICAL COLLAGE,824,240,15,15
+Chennai,Zone 11,Valasaravakkam,SRM HOSPITAL,0,0,0,0
+Chennai,Zone 11,Valasaravakkam,SRM DENTAL HOSPITAL,0,0,0,0
+Chennai,Zone 11,Valasaravakkam,BALAJI NURSING HOSPITAL,9,0,0,0
+Chennai,Zone 11,Valasaravakkam,NRG  HOSPITAL,30,7,5,0
+Chennai,Zone 11,Valasaravakkam,VIGNESH HOSPITAL ,25,15,4,0
+Chennai,Zone 11,Valasaravakkam,SRUSTI HOSPITAL,25,2,1,0
+Chennai,Zone 11,Valasaravakkam,GR  HOSPITAL,4,2,0,0
+Chennai,Zone 12,Alandur,KEDHAR HOSPITAL,30,0,4,0
+Chennai,Zone 12,Alandur,MIOT HOSPITAL,650,300,33,10
+Chennai,Zone 12,Alandur,RADHA RAJENDRA HOSPITAL,21,0,2,1
+Chennai,Zone 12,Alandur,RAMADEVI HOSPITAL,0,0,0,0
+Chennai,Zone 12,Alandur,BALAJI HOSPITAL,25,0,2,1
+Chennai,Zone 12,Alandur,MEENA NURSING HOME,0,0,0,0
+Chennai,Zone 12,Alandur,G J HOSPITAL,0,0,0,0
+Chennai,Zone 12,Alandur,SP HOSPITAL,30,0,3,0
+Chennai,Zone 12,Alandur,SARATHI HOSPITAL,20,0,0,0
+Chennai,Zone 12,Alandur,MARGREAT SYDNEY HOSPITAL,19,0,2,1
+Chennai,Zone 12,Alandur,K P HOSPITAL,35,7,2,1
+Chennai,Zone 12,Alandur,PRIME CARE HOSPITAL,15,0,0,0
+Chennai,Zone 12,Alandur,B M HOSPITAL,16,12,4,4
+Chennai,Zone 12,Alandur,BARATH HOSPITAL,20,0,7,7
+Chennai,Zone 12,Alandur,C M HOSPITAL,20,3,0,0
+Chennai,Zone 12,Alandur,HARIHARAN HOSPITAL,8,0,8,8
+Chennai,Zone 12,Alandur,HINDU MISSION HOSPITAL,40,0,0,2
+Chennai,Zone 12,Alandur,K F HOSPITAL,8,0,0,0
+Chennai,Zone 12,Alandur,GOWRI NURSING HOME,15,0,0,0
+Chennai,Zone 12,Alandur,PANKAJAM MEMORIAL HOSPITAL,25,0,0,0
+Chennai,Zone 12,Alandur,CHAKRA HOSPITAL,50,8,0,2
+Chennai,Zone 12,Alandur,SRINIVASAN RAJALAKSHMI HOSPITAL,40,14,6,2
+Chennai,Zone 12,Alandur,NEO LIFE HOSPITAL,20,0,0,0
+Chennai,Zone 13,Adyar,FORTIS MALAR,113,48,14,14
+Chennai,Zone 13,Adyar,"PRASHAANTH HOSPITAL, VELACHERY",130,80,20,20
+Chennai,Zone 13,Adyar,"VHS, ADAYAR",166,70,25,10
+Chennai,Zone 13,Adyar,Mint Hospital,37,37,4,1
+Chennai,Zone 13,Adyar,"Pon Malligai Hospital, Adambakkam",50,50,5,2
+Chennai,Zone 13,Adyar,Bloom Fertility and Health Care,30,12,0,0
+Chennai,Zone 13,Adyar,Ishwarya Hospital,25,17,0,0
+Chennai,Zone 13,Adyar,PM Hospital,42,14,0,0
+Chennai,Zone 13,Adyar,KINGS  INSTITUTE ,750,750,100,25
+Chennai,Zone 14 ,Perungudi,sukuruthi pvt hospital,5,0,0,0
+Chennai,Zone 14 ,Perungudi,Anitha Hospital,30,0,0,0
+Chennai,Zone 14,Perungudi,Sibi hospital,5,0,0,0
+Chennai,Zone 14,Perungudi,Pradeep nursing home,5,0,0,0
+Chennai,Zone 14,Perungudi,Saraswathi hospital,50,0,5,0
+Chennai,Zone 14,Perungudi,SS Hospital,10,4,1,1
+Chennai,Zone 14,Perungudi,Promed Hospital,50,10,3,10
+Chennai,Zone 14,Perungudi,DR KAMAKSHI MEMORIAL HOSPITAL,250,50,20,15
+Chennai,Zone 14,Perungudi,Gem Hospital,150,150,15,15
+Chennai,Zone 14,Perungudi,Apollo Speciality Hospital,108,24,12,16
+Chennai,Zone 14,Perungudi,suraj hospital,30,5,3,1
+Chennai,Zone 15,Sholinganallur,"Sugan Hospital, No-2/365 A, Pandiyan Salai, Neelankarai, Chennai-115.",10,0,1,1
+Chennai,Zone 15,Sholinganallur,"Shanthi Hospital,No-18, East Coast Road, Neelannkarai, Chennai-41",22,0,0,0
+Chennai,Zone 15,Sholinganallur,"KL Multi Speciality Hospital, No-348, East Coast Road, Neelannkarai, Chennai-41",30,0,3,3
+Chennai,Zone 15,Sholinganallur,"Sahishnatha, Institute of Matermal And Child Health , Dr. Jayam Memorial Hospital, No2/614A, Philips Street, Neelankarai, Chennai-115.",20,0,1,1
+Chennai,Zone 15,Sholinganallur,"G.M. Heart Care Hospital, Kabaleeshwarar Nagar, Neelangarai,Chennai - 115",25,0,2,2
+Chennai,Zone 15,Sholinganallur,"Curi Hospital, No: 148, OMR, Thoraipakkam, 
+Chennai- 600 096.
+",72,0,2,2
+Chennai,Zone 15,Sholinganallur,"Nanthini Hospital, No 168, Chandrasekaran Avenue,
+4th street, Old Mahabalipuram Road,
+ Mettukuppam, Chennai- 600 097
+",15,0,0,0
+Chennai,Zone 15,Sholinganallur,"Jaya deva Hospital,No: 879, Srividya Avenue, OMR, 
+Mettukuppam,Chennai- 600 097.
+",10,0,0,0
+Chennai,Zone 15,Sholinganallur,"Trust life hospital, ECR, Injambakkam",10,0,2,2
+Chennai,Zone 15,Sholinganallur,"Siva Hopital, Injambakkam, Chennai - 119",10,0,2,2
+Chennai,Zone 15,Sholinganallur,"Apollo Cradle Hospital, OMR, 
+Near Hot Chips & Aravind Theatre,Karapakkam,
+Chennai – 600097
+",46,0,1,1
+Chennai,Zone 15,Sholinganallur,"Swaram Hospital, No: 13, Duraiswamy 2nd street,Sholinganallur,
+Chennai-600119
+",30,0,1,1
+Chennai,Zone 15,Sholinganallur,"Sri Sugam Hospital, No: 189, OMR,Sholinganallur, 
+Chennai- 119
+",6,0,0,0
+Chennai,Zone 15,Sholinganallur,"Trust Life Hospital, Panaiyur, Chennai-119",5,0,0,0
+Chennai,Zone 15,Sholinganallur,"Ragas General Hospital, E.C.R Uthandi, Ch-119",100,0,0,0
+Chennai,Zone 15,Sholinganallur,"Sathyabama General Hospital, OMR, Chemmanchery,
+Chennai- 600119
+",100,0,0,0
+Chennai,Zone 15,Sholinganallur,"Astraa speciality hospital,
+Nookambalayam link Road, Semmancherry, chennai-119",30,0,1,1
