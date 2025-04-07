@@ -22,9 +22,71 @@ for encoding in encodings:
 if df is None:
     raise ValueError("Failed to load CSV - tried encodings: utf-8, latin1, cp1252")
 
-# Show the first few rows
-print("First 5 rows of the dataset:")
+# --------------------------
+# 🧹 Data Preprocessing
+# --------------------------
+
+# Initial data inspection
+print("\nInitial Data Inspection:")
+print("First 5 rows:")
 print(df.head())
+print("\nData shape:", df.shape)
+
+# 1. Drop irrelevant columns (if any)
+cols_to_drop = [col for col in df.columns if 'Unnamed' in col]
+if cols_to_drop:
+    df.drop(columns=cols_to_drop, inplace=True)
+    print(f"\nDropped columns: {cols_to_drop}")
+
+# 2. Handle missing values
+print("\nMissing values before treatment:")
+print(df.isnull().sum())
+
+# Forward fill for time-based data
+time_sensitive_cols = ['Number of COVID beds', 'Number of ICU beds', 'Number of ventilators or ABD']
+df[time_sensitive_cols] = df[time_sensitive_cols].ffill()
+
+# Backward fill for remaining missing values
+df = df.bfill()
+
+print("\nMissing values after treatment:")
+print(df.isnull().sum())
+
+# 3. Data cleaning
+print("\nData Cleaning:")
+# Strip whitespace from all string columns
+df = df.apply(lambda x: x.str.strip() if x.dtype == "object" else x)
+
+# Convert empty strings to NaN
+df.replace('', np.nan, inplace=True)
+
+# Handle numeric columns
+numeric_cols = ['Total no. of beds', 'Number of COVID beds', 'Number of ICU beds', 'Number of ventilators or ABD']
+for col in numeric_cols:
+    # Convert to numeric, coerce errors to NaN
+    df[col] = pd.to_numeric(df[col], errors='coerce')
+    # Fill remaining NaN with 0 for these specific metrics
+    df[col].fillna(0, inplace=True)
+    # Convert to integers
+    df[col] = df[col].astype(int)
+
+print("\nData types after conversion:")
+print(df.dtypes)
+
+# 4. Remove duplicates
+initial_count = len(df)
+df.drop_duplicates(inplace=True)
+removed_count = initial_count - len(df)
+print(f"\nRemoved {removed_count} duplicate rows")
+
+# Final data inspection
+print("\nFinal Data Shape:", df.shape)
+print("\nFirst 5 rows after preprocessing:")
+print(df.head())
+
+# Show the last few rows
+print("Last 5 rows of the dataset:")
+print(df.tail())
 
 # Basic info
 print("\nDataset Info:")
@@ -59,32 +121,26 @@ for col in df.select_dtypes(include='object').columns:
 # 📈 Univariate Analysis
 # --------------------------
 
-
-
-
-# Data cleaning
-df.columns = df.columns.str.strip()
-df = df.apply(lambda x: x.str.strip() if x.dtype == "object" else x)
-numeric_cols = ['Total no. of beds', 'Number of COVID beds', 'Number of ICU beds', 'Number of ventilators or ABD']
-df[numeric_cols] = df[numeric_cols].apply(pd.to_numeric, errors='coerce').fillna(0)
-
 # Define metrics for visualizations
 metrics = ['Total no. of beds', 'Number of COVID beds', 'Number of ICU beds', 'Number of ventilators or ABD']
 titles = ['Total Beds', 'COVID Beds', 'ICU Beds', 'Ventilators']
 
 # Set default font and style
-plt.rcParams['font.family'] = 'Arial Unicode MS'  # More comprehensive font support
+plt.rcParams['font.family'] = 'DejaVu Sans'  # More widely available font
 plt.style.use('seaborn-v0_8-colorblind')
 
+# Initialize figure counter
+fig_num = 1
 
 # Histograms for numeric columns
-df.select_dtypes(include=np.number).hist(figsize=(12, 8), bins=20, edgecolor='black')
-plt.suptitle('📊 Histogram of Numerical Features')
+plt.figure(fig_num, figsize=(12, 8))
+df.select_dtypes(include=np.number).hist(bins=20, edgecolor='black')
+plt.suptitle('Histogram of Numerical Features')
 plt.tight_layout()
+fig_num += 2
 
-
-# 1. Box Plot with Visible X-axis (Fixed)
-plt.figure(1, figsize=(14, 8))
+# 1. Box Plot with Visible X-axis
+plt.figure(fig_num, figsize=(14, 8))
 sns.boxplot(x='Zone Name', y='Total no. of beds', data=df, 
            hue='Zone Name', palette='pastel', legend=False)
 plt.title('Bed Distribution by Zone', fontsize=14, pad=15)
@@ -96,7 +152,8 @@ plt.tight_layout()
 plt.xticks(rotation=45)
 
 # 2. Line Plot - COVID Beds Trend
-plt.figure(2)
+plt.figure(fig_num)
+fig_num += 1
 zone_stats = df.groupby('Zone Name')['Number of COVID beds'].sum().sort_values(ascending=False)
 zone_stats.plot(kind='line', marker='o')
 plt.title('COVID Beds Trend by Zone')
@@ -104,13 +161,15 @@ plt.ylabel('Number of COVID Beds')
 plt.grid(True)
 
 # 3. Scatter Plot - ICU vs Ventilators
-plt.figure(3)
+plt.figure(fig_num)
+fig_num += 1
 sns.scatterplot(x='Number of ICU beds', y='Number of ventilators or ABD', 
                 hue='Zone Name', data=df, s=100)
 plt.title('ICU Beds vs Ventilators')
 
 # 4. Correlation Heatmap
-plt.figure(4, figsize=(10, 8))
+plt.figure(fig_num, figsize=(10, 8))
+fig_num += 1
 corr_matrix = df[metrics].corr()
 heatmap = sns.heatmap(corr_matrix, 
                      annot=True, 
@@ -125,7 +184,8 @@ plt.yticks(rotation=0)
 plt.tight_layout()
 
 # 5. Enhanced Count Plot - Hospitals by Zone
-plt.figure(5, figsize=(12, 8))
+plt.figure(fig_num, figsize=(12, 8))
+fig_num += 1
 sns.countplot(y='Zone Name', data=df, order=df['Zone Name'].value_counts().index,
              hue='Zone Name', palette='viridis', legend=False)
 plt.title('Hospitals Count by Zone', fontsize=14, pad=20)
@@ -135,8 +195,8 @@ plt.ylabel('Zone', fontsize=12)
 
 
 # 6. Enhanced Scatter Plot with Visible Legend
-plt.close(6)
-plt.figure(6, figsize=(14, 8))
+plt.figure(fig_num, figsize=(14, 8))
+fig_num += 1
 scatter = sns.scatterplot(data=df, x='Number of ICU beds', y='Number of ventilators or ABD',
                          hue='Zone Name', size='Total no. of beds',
                          sizes=(50, 500), alpha=0.8, palette='tab20')
@@ -147,7 +207,8 @@ plt.legend(bbox_to_anchor=(1.25, 1), loc='upper right', title='Zone Name')
 plt.tight_layout()
 
 # 7. Enhanced Pie Charts with Better Label Placement
-plt.figure(7, figsize=(16, 12))
+plt.figure(fig_num, figsize=(16, 12))
+fig_num += 1
 plt.subplots_adjust(top=0.9, hspace=0.6, wspace=0.6)
 
 
@@ -191,10 +252,10 @@ plt.figlegend(handles, zones,
              bbox_to_anchor=(1.0, 0.5),
              fontsize=9)
 # 8. Total Beds by Zone Bar Chart
-plt.close(8)  # Ensure figure 8 is closed before creating new one
-plt.figure(8, figsize=(14, 8))
-sns.barplot(data=df, x='Zone Name', y='Total no. of beds', 
-           palette='viridis', estimator=sum, ci=None)
+plt.figure(fig_num, figsize=(14, 8))
+fig_num += 1
+sns.barplot(data=df, x='Zone Name', y='Total no. of beds', hue='Zone Name',
+           palette='viridis', estimator=sum, errorbar=None, legend=False)
 plt.title('Total Beds by Zone', fontsize=16, pad=20)
 plt.xlabel('Zone', fontsize=14)
 plt.ylabel('Total Beds', fontsize=14)
@@ -203,8 +264,8 @@ plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
 
 # 9. Enhanced Histogram (Fixed)
-plt.close(9)
-plt.figure(9, figsize=(14, 8))
+plt.close(11)
+plt.figure(11, figsize=(14, 8))
 sns.histplot(data=df, x='Total no. of beds', bins=15, 
             kde=True, color='skyblue',
             edgecolor='black', alpha=0.8)
@@ -215,7 +276,7 @@ plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
 
 # 10. Enhanced Pair Plot with Visible Titles
-plt.figure(10, figsize=(12, 10))
+plt.figure(12, figsize=(12, 10))
 pairplot = sns.pairplot(df[metrics], diag_kind='kde',
             plot_kws={'alpha':0.7, 's':60, 'color':'teal'},
             diag_kws={'color':'salmon', 'fill':True})
