@@ -118,8 +118,38 @@ for col in df.select_dtypes(include='object').columns:
     print(df[col].value_counts())
 
 # --------------------------
-# 📈 Univariate Analysis
+# 📊 Statistical Analysis
 # --------------------------
+
+print("\nStatistical Analysis:")
+
+# Calculate and display quartiles
+print("\nQuartiles (q1, q2, q3):")
+for col in numeric_cols:
+    q1 = df[col].quantile(0.25)
+    q2 = df[col].quantile(0.5)
+    q3 = df[col].quantile(0.75)
+    print(f"\n{col}:")
+    print(f"q1: {q1:.2f}")
+    print(f"q2 (median): {q2:.2f}") 
+    print(f"q3: {q3:.2f}")
+
+# Calculate and display IQR
+print("\nInterquartile Range (IQR):")
+for col in numeric_cols:
+    q1 = df[col].quantile(0.25)
+    q3 = df[col].quantile(0.75)
+    iqr = q3 - q1
+    print(f"{col}: {iqr:.2f}")
+
+# Calculate and display z-scores
+print("\nZ-scores (first 5 rows):")
+z_scores = df[numeric_cols].apply(lambda x: (x - x.mean()) / x.std())
+print(z_scores.head())
+
+# -------------------------
+#  Univariate Analysis
+# -------------------------
 
 # Define metrics for visualizations
 metrics = ['Total no. of beds', 'Number of COVID beds', 'Number of ICU beds', 'Number of ventilators or ABD']
@@ -141,8 +171,7 @@ fig_num += 2
 
 # 1. Box Plot with Visible X-axis
 plt.figure(fig_num, figsize=(14, 8))
-sns.boxplot(x='Zone Name', y='Total no. of beds', data=df, 
-           hue='Zone Name', palette='pastel', legend=False)
+sns.boxplot(x='Zone Name', y='Total no. of beds', data=df, hue='Zone Name', palette='pastel', legend=False)
 plt.title('Bed Distribution by Zone', fontsize=14, pad=15)
 plt.xticks(rotation=45, ha='right', fontsize=12)
 plt.yticks(fontsize=12)
@@ -171,10 +200,10 @@ plt.title('ICU Beds vs Ventilators')
 plt.figure(fig_num, figsize=(10, 8))
 fig_num += 1
 corr_matrix = df[metrics].corr()
-heatmap = sns.heatmap(corr_matrix, 
-                     annot=True, 
-                     fmt=".2f", 
-                     cmap='coolwarm', 
+heatmap = sns.heatmap(corr_matrix,
+                     annot=True,
+                     fmt=".2f",
+                     cmap='coolwarm',
                      center=0,
                      linewidths=0.5,
                      cbar_kws={'label': 'Correlation Coefficient'})
