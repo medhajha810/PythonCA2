@@ -183,7 +183,7 @@ plt.xticks(rotation=45, ha='right')
 plt.yticks(rotation=0)
 plt.tight_layout()
 
-# 5. Enhanced Count Plot - Hospitals by Zone
+# 5. Count Plot - Hospitals by Zone
 plt.figure(fig_num, figsize=(12, 8))
 fig_num += 1
 sns.countplot(y='Zone Name', data=df, order=df['Zone Name'].value_counts().index,
@@ -194,7 +194,7 @@ plt.ylabel('Zone', fontsize=12)
 
 
 
-# 6. Enhanced Scatter Plot with Visible Legend
+# 6. Scatter Plot
 plt.figure(fig_num, figsize=(14, 8))
 fig_num += 1
 scatter = sns.scatterplot(data=df, x='Number of ICU beds', y='Number of ventilators or ABD',
@@ -206,13 +206,13 @@ plt.ylabel('Number of Ventilators', fontsize=12)
 plt.legend(bbox_to_anchor=(1.25, 1), loc='upper right', title='Zone Name')
 plt.tight_layout()
 
-# 7. Enhanced Pie Charts with Better Label Placement
+# 7. Pie Charts
 plt.figure(fig_num, figsize=(16, 12))
 fig_num += 1
 plt.subplots_adjust(top=0.9, hspace=0.6, wspace=0.6)
 
 
-# Get unique zones and assign vibrant colors
+
 zones = df['Zone Name'].unique()
 colors = plt.cm.tab20(np.linspace(0, 1, len(zones)))
 zone_colors = dict(zip(zones, colors))
@@ -224,7 +224,7 @@ for i, (metric, title) in enumerate(zip(metrics, titles), 1):
     # Calculate percentages
     percentages = zone_stats/zone_stats.sum()*100
     
-    # Plot pie with non-overlapping percentage labels
+    # Plot pie 
     wedges, texts, autotexts = plt.pie(zone_stats,
             labels=None,
             autopct=lambda p: f'{p:.1f}%' if p >= 5 else '',
@@ -235,7 +235,7 @@ for i, (metric, title) in enumerate(zip(metrics, titles), 1):
             pctdistance=0.8,
             rotatelabels=True)
     
-    # Adjust label positions to prevent overlap
+    
     for autotext in autotexts:
         autotext.set_color('black')
         autotext.set_bbox(dict(facecolor='white', alpha=0.8, edgecolor='none'))
@@ -244,7 +244,7 @@ for i, (metric, title) in enumerate(zip(metrics, titles), 1):
              fontsize=12, pad=15)
     plt.axis('equal')
 
-# Add simple legend without percentages
+
 handles = [plt.Rectangle((0,0),1,1, color=zone_colors[zone]) for zone in zones]
 plt.figlegend(handles, zones,
              title='Zones',
@@ -263,7 +263,7 @@ plt.xticks(rotation=45, ha='right')
 plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
 
-# 9. Enhanced Histogram (Fixed)
+# 9.Histogram 
 plt.close(11)
 plt.figure(11, figsize=(14, 8))
 sns.histplot(data=df, x='Total no. of beds', bins=15, 
@@ -275,7 +275,7 @@ plt.ylabel('Count', fontsize=12)
 plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
 
-# 10. Enhanced Pair Plot with Visible Titles
+# 10. Pair Plot 
 plt.figure(12, figsize=(12, 10))
 pairplot = sns.pairplot(df[metrics], diag_kind='kde',
             plot_kws={'alpha':0.7, 's':60, 'color':'teal'},
