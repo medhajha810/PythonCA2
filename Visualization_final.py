@@ -22,9 +22,9 @@ for encoding in encodings:
 if df is None:
     raise ValueError("Failed to load CSV - tried encodings: utf-8, latin1, cp1252")
 
-# --------------------------
-# 🧹 Data Preprocessing
-# --------------------------
+
+# Data Preprocessing
+
 
 # Initial data inspection
 print("\nInitial Data Inspection:")
@@ -117,9 +117,9 @@ for col in df.select_dtypes(include='object').columns:
     print(f"\nColumn: {col}")
     print(df[col].value_counts())
 
-# --------------------------
-# 📊 Statistical Analysis
-# --------------------------
+
+#  Statistical Analysis
+
 
 print("\nStatistical Analysis:")
 
@@ -147,9 +147,9 @@ print("\nZ-scores (first 5 rows):")
 z_scores = df[numeric_cols].apply(lambda x: (x - x.mean()) / x.std())
 print(z_scores.head())
 
-# -------------------------
+
 #  Univariate Analysis
-# -------------------------
+
 
 # Define metrics for visualizations
 metrics = ['Total no. of beds', 'Number of COVID beds', 'Number of ICU beds', 'Number of ventilators or ABD']
