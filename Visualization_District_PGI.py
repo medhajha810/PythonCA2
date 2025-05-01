@@ -83,7 +83,7 @@ df.drop_duplicates(inplace=True)
 removed_count = initial_count - len(df)
 print(f"\nRemoved {removed_count} duplicate rows")
 
-# Calculate quartiles and IQR for 'District score 2021-22 - Overall'
+#quartiles and IQR
 q1 = df['District score 2021-22 - Overall'].quantile(0.25)
 q3 = df['District score 2021-22 - Overall'].quantile(0.75)
 iqr = q3 - q1
@@ -91,23 +91,25 @@ print(f"\nQuartile 1 (Q1): {q1}")
 print(f"Quartile 3 (Q3): {q3}")
 print(f"Interquartile Range (IQR): {iqr}")
 
-# Identify outliers based on IQR
+#outliers based on IQR
 lower_bound = q1 - 1.5 * iqr
 upper_bound = q3 + 1.5 * iqr
+print("Lower Bound:", lower_bound)
+print("Upper Bound:", upper_bound)
 outliers_iqr = df[(df['District score 2021-22 - Overall'] < lower_bound) | (df['District score 2021-22 - Overall'] > upper_bound)]
 print(f"\nNumber of outliers based on IQR: {len(outliers_iqr)}")
 if not outliers_iqr.empty:
     print("Outliers based on IQR:")
     print(outliers_iqr[['District', 'District score 2021-22 - Overall']])
 
-# Calculate z-scores for 'District score 2021-22 - Overall'
+#  z-scores
 mean_score = df['District score 2021-22 - Overall'].mean()
 std_score = df['District score 2021-22 - Overall'].std()
 df['z_score'] = (df['District score 2021-22 - Overall'] - mean_score) / std_score
 print(f"\nMean of scores: {mean_score}")
 print(f"Standard deviation of scores: {std_score}")
 
-# Identify outliers based on z-score 
+#outliers based on z-score
 outliers_z = df[(df['z_score'] > 3) | (df['z_score'] < -3)]
 print(f"\nNumber of outliers based on z-score: {len(outliers_z)}")
 if not outliers_z.empty:
@@ -118,14 +120,16 @@ print("\nFinal Data Shape:", df.shape)
 print("\nFirst 5 rows after preprocessing:")
 print(df.head())
 
-# Analyze average district scores by state
+# average district scores by state
 state_avg_scores = df.groupby('State/UT')['District score 2021-22 - Overall'].mean().sort_values(ascending=False)
 print("\nAverage District Scores by State/UT:")
 print(state_avg_scores)
 
-# Visualize average district scores by state
+#average district scores by state
 plt.figure(figsize=(14,8))
-sns.barplot(x=state_avg_scores.index, y=state_avg_scores.values, palette='viridis')
+state_avg_df = state_avg_scores.reset_index()
+state_avg_df.columns = ['State/UT', 'Average Score']
+sns.barplot(x='State/UT', y='Average Score', hue='State/UT', data=state_avg_df, palette='viridis', legend=False)
 plt.xticks(rotation=90)
 plt.title('Average District Score by State/UT', fontsize=16)
 plt.xlabel('State/UT', fontsize=14)
