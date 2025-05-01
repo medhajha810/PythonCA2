@@ -46,9 +46,7 @@ if cols_to_drop:
 print("\nMissing values before treatment:")
 print(df.isnull().sum())
 
-# Forward fill 
-time_sensitive_cols = ['District score 2021-22 - Overall']
-df[time_sensitive_cols] = df[time_sensitive_cols].ffill()
+
 
 
 # Fill with empty string
@@ -65,7 +63,6 @@ print(df.isnull().sum())
 # Data cleaning
 print("\nData Cleaning:")
 df = df.apply(lambda x: x.str.strip() if x.dtype == "object" else x)
-df.replace('', np.nan, inplace=True)
 
 # Handle numeric columns
 numeric_cols = ['District score 2021-22 - Overall']
