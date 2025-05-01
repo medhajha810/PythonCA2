@@ -23,11 +23,19 @@ if df is None:
     raise ValueError("Failed to load CSV - tried encodings: utf-8, latin1, cp1252")
 
 # Data Preprocessing
-
-print("\nInitial Data Inspection:")
+print("\nData Overview after loading:")
 print("First 5 rows:")
 print(df.head())
 print("\nData shape:", df.shape)
+print("Last 5 rows")
+print(df.tail())
+print("\nData info:")
+print(df.info())
+print("\nData types:")
+print(df.dtypes)
+print("Statistics Summary")
+print(df.describe(()))
+
 
 # Drop irrelevant columns
 cols_to_drop = [col for col in df.columns if 'Unnamed' in col]
@@ -38,18 +46,16 @@ if cols_to_drop:
 print("\nMissing values before treatment:")
 print(df.isnull().sum())
 
-# Forward fill for time-sensitive columns
+# Forward fill 
 time_sensitive_cols = ['District score 2021-22 - Overall']
 df[time_sensitive_cols] = df[time_sensitive_cols].ffill()
 
-# Backward fill for remaining missing values
-df = df.bfill()
 
-# Fill remaining missing values in object columns with empty string
+# Fill with empty string
 obj_cols = df.select_dtypes(include=['object']).columns
 df[obj_cols] = df[obj_cols].fillna('')
 
-# Fill remaining missing values in numeric columns with 0
+# Fill numeric columns with 0
 num_cols = df.select_dtypes(include=[np.number]).columns
 df[num_cols] = df[num_cols].fillna(0)
 
@@ -77,9 +83,55 @@ df.drop_duplicates(inplace=True)
 removed_count = initial_count - len(df)
 print(f"\nRemoved {removed_count} duplicate rows")
 
+# Calculate quartiles and IQR for 'District score 2021-22 - Overall'
+q1 = df['District score 2021-22 - Overall'].quantile(0.25)
+q3 = df['District score 2021-22 - Overall'].quantile(0.75)
+iqr = q3 - q1
+print(f"\nQuartile 1 (Q1): {q1}")
+print(f"Quartile 3 (Q3): {q3}")
+print(f"Interquartile Range (IQR): {iqr}")
+
+# Identify outliers based on IQR
+lower_bound = q1 - 1.5 * iqr
+upper_bound = q3 + 1.5 * iqr
+outliers_iqr = df[(df['District score 2021-22 - Overall'] < lower_bound) | (df['District score 2021-22 - Overall'] > upper_bound)]
+print(f"\nNumber of outliers based on IQR: {len(outliers_iqr)}")
+if not outliers_iqr.empty:
+    print("Outliers based on IQR:")
+    print(outliers_iqr[['District', 'District score 2021-22 - Overall']])
+
+# Calculate z-scores for 'District score 2021-22 - Overall'
+mean_score = df['District score 2021-22 - Overall'].mean()
+std_score = df['District score 2021-22 - Overall'].std()
+df['z_score'] = (df['District score 2021-22 - Overall'] - mean_score) / std_score
+print(f"\nMean of scores: {mean_score}")
+print(f"Standard deviation of scores: {std_score}")
+
+# Identify outliers based on z-score 
+outliers_z = df[(df['z_score'] > 3) | (df['z_score'] < -3)]
+print(f"\nNumber of outliers based on z-score: {len(outliers_z)}")
+if not outliers_z.empty:
+    print("Outliers based on z-score:")
+    print(outliers_z[['District', 'District score 2021-22 - Overall', 'z_score']])
+
 print("\nFinal Data Shape:", df.shape)
 print("\nFirst 5 rows after preprocessing:")
 print(df.head())
+
+# Analyze average district scores by state
+state_avg_scores = df.groupby('State/UT')['District score 2021-22 - Overall'].mean().sort_values(ascending=False)
+print("\nAverage District Scores by State/UT:")
+print(state_avg_scores)
+
+# Visualize average district scores by state
+plt.figure(figsize=(14,8))
+sns.barplot(x=state_avg_scores.index, y=state_avg_scores.values, palette='viridis')
+plt.xticks(rotation=90)
+plt.title('Average District Score by State/UT', fontsize=16)
+plt.xlabel('State/UT', fontsize=14)
+plt.ylabel('Average District Score', fontsize=14)
+plt.tight_layout()
+plt.show()
 
 # Visualizations
 
